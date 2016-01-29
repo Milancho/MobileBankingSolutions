@@ -1,7 +1,32 @@
-<div data-options="dxView : { name: 'home', title: 'Home' } " >
-    <div class="home-view dx-content-background"  data-options="dxContent : { targetPlaceholder: 'content' } " >
-        <p>To learn more about DevExtreme, visit <a href="http://help.devexpress.com/DevExtreme" target="_blank">http://help.devexpress.com/DevExtreme</a>. It is an interactive learning environment where you can find documentation, feature demonstrations, and various tutorials.</p>
-        <p>If you have any questions about DevExtreme, do not hesitate to contact our support team via <a href="http://support.devexpress.com" target="_blank">http://support.devexpress.com</a>.</p>
-        <p>Test Note.</p>
+<div data-options="dxView : { name: 'home', title: 'Home' } ">
+    <div class="home-view" data-options="dxContent : { targetPlaceholder: 'content' } ">
+        <div id="sampleGroup" data-bind="dxValidationGroup : {}">
+            <div data-bind="dxTextBox: { value: login, placeholder: 'Login' },
+        dxValidator: { validationRules: [{
+            type: 'required'
+        }, {
+            type: 'pattern',
+            pattern: '^[a-zA-Z]+$',
+            message: 'Do not use digits.'
+        }] }">
+            </div>
+            <div data-bind="dxTextBox: { value: password, mode: 'password' },
+        dxValidator: { validationRules: [{
+            type: 'required',
+            message: 'Password is required'
+        }] }">
+            </div>
+            <div data-bind="dxButton: { text: 'Validate and submit', onClick: validateAndSubmit }"></div>
+            <!--<div data-bind="dxButton: { text: 'Greet', onClick: greet }"></div>-->
+        </div>
+
+        <h1 data-bind="text: message"></h1>
+        Enter Your Name: <div data-bind="dxTextBox: {value: name}" style="width:200px"></div>
+        <div data-bind="dxButton: { text: 'Say Hello', onClick: sayHello }"></div>
+        <div data-bind="dxButton: { text: 'Greet', onClick: greet }"></div>
+        <br />
+        <br />
+        <div data-bind="dxButton: { text: 'Amortization Schedule', onClick: gotoAmortizationSchedule }"></div>
+
     </div>
 </div>

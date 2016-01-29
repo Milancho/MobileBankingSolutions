@@ -1,0 +1,5 @@
+<div data-options="dxView : { name: 'MenuView', title: 'MenuView' } " >
+    <div  data-options="dxContent : { targetPlaceholder: 'content' } " >
+        <div data-bind="dxMenu: { items: menuItems, onItemClick: itemClicked }"></div>
+    </div>
+</div>

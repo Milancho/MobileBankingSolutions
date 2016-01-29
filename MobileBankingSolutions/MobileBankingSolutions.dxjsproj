@@ -23,6 +23,48 @@
     <Content Include="cordova.js" />
     <Content Include="index.html" />
     <Content Include="index.css" />
+    <Content Include="views\LoanView.dxview">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\LoanView.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\MenuView.dxview">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\MenuView.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\MessageView.dxview">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\MessageView.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\PersonView.dxview">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\PersonView.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\TaskView.dxview">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\TaskView.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\TipCalculator.dxview">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\TipCalculator.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\View1.dxview">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\View1.js">
+      <SubType>Content</SubType>
+    </Content>
     <None Include="config.xml" />
     <Content Include="css\dx.spa.css" />
     <Content Include="css\dx.common.css" />
@@ -77,6 +119,30 @@
     <Content Include="js\jquery-1.11.3.min.js" />
     <Content Include="js\jquery-2.1.4.min.js" />
     <Content Include="js\knockout-3.4.0.js" />
+    <Content Include="views\ApplicationView.dxview">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\ApplicationView.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\book\books.dxview">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\book\books.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\CompanyView.dxview">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\CompanyView.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\greeting.dxview">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\greeting.js">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="views\home.dxview" />
     <Content Include="views\home.css" />
     <Content Include="views\home.js" />
@@ -99,6 +165,7 @@
     <Folder Include="layouts\SlideOut\" />
     <Folder Include="layouts\Split\" />
     <Folder Include="views\" />
+    <Folder Include="views\book\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
   <Target Name="Build">

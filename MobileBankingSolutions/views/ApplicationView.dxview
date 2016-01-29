@@ -1,0 +1,15 @@
+<div data-options="dxView : { name: 'ApplicationView', title: 'ApplicationView' } ">
+    <div data-options="dxContent : { targetPlaceholder: 'content' } ">
+
+        <div data-bind="dxList: { items: [
+                  { id: 1, name: 'Application-1' },
+                  { id: 2, name: 'Application-2' }
+            ] }">
+            <div data-options="dxTemplate : { name: 'item' } " data-bind="dxAction: '#LoanView/{id}'">
+                <div data-bind="text: name"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,11 @@
+<div data-options="dxView : { name: 'MessageView', title: 'MessageView' } " >
+    <div  data-options="dxContent : { targetPlaceholder: 'content' } " >
+        <p style="padding: 5px">Message</p>        
+        <div data-bind="dxList: { dataSource: dataSource }">
+            <div data-options="dxTemplate : { name: 'item' } ">
+                <p>Subject: <b data-bind="text: Subject"></b></p>
+                <p>Body: <i data-bind="text: Body"></i></p>
+            </div>
+        </div>
+    </div>
+</div>

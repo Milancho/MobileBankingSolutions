@@ -1,0 +1,15 @@
+<div data-options="dxView : { name: 'TaskView', title: 'TaskView' } ">
+    <div data-options="dxContent : { targetPlaceholder: 'content' } ">
+        <div data-bind="dxList: { dataSource: dataSource }">
+            <div data-options="dxTemplate : { name: 'item' } ">
+                <p>Id: <b data-bind="text: rTaskID"></b></p>
+                <p>Name: <i data-bind="text: Name"></i></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    
