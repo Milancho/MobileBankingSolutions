@@ -4,16 +4,14 @@
         dataSource: new DevExpress.data.DataSource({
             load: function (loadOptions) {
                 var d = $.Deferred();
-                $.getJSON('http://localhost:44661/api/Message').done(function (data) {
+                $.getJSON('http://localhost:61915/api/messages').done(function (data) {
                     console.log(data);
                     d.resolve(data, { totalCount: data.length }); 
                 });
                 return d.promise();
             }
-
         })
     };
-
     return viewModel;
 };
 
