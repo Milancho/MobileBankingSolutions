@@ -47,6 +47,18 @@
     <Content Include="views\PersonView.js">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="views\Register\MenuEagerView.dxview">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\Register\MenuEagerView.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\Register\Register.dxview">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\Register\Register.js">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="views\TaskView.dxview">
       <SubType>Content</SubType>
     </Content>
@@ -166,6 +178,7 @@
     <Folder Include="layouts\Split\" />
     <Folder Include="views\" />
     <Folder Include="views\book\" />
+    <Folder Include="views\Register" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
   <Target Name="Build">

@@ -1,0 +1,15 @@
+<div data-options="dxView : { name: 'MenuEagerView', title: 'MenuEagerView' } " >
+    <div data-options="dxContent : { targetPlaceholder: 'content' } " class="dx-content-background">
+        <p style="padding: 5px">Menu</p>
+        <div data-bind="dxButton: { text: '@Search', onClick: Search_Click }"></div>
+        <div data-bind="dxList: { dataSource: dataSource }">
+            <div data-options="dxTemplate : { name: 'item' } ">
+                <p>Tree: <i data-bind="text: Tree"></i></p>              
+                <p>Text: <i data-bind="text: Text"></i></p>     
+            </div>
+        </div>
+
+        <!--<div data-bind="dxDataGrid: { dataSource: [{ key: 1, title: 'Item1'}, { key: 2, title: 'Item2' }], columns: ['key', 'title'] }"></div>-->
+
+    </div>
+</div>

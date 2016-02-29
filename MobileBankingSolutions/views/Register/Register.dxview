@@ -1,0 +1,15 @@
+<div data-options="dxView : { name: 'Register', title: 'Register' } " >
+    <div data-options="dxContent : { targetPlaceholder: 'content' } " class="dx-content-background">
+        Email:
+        <div data-bind="dxTextBox: {value: email}"></div>
+        Password:
+        <div data-bind="dxTextBox: {value: password}"></div>
+        Confirm Password:
+        <div data-bind="dxTextBox: {value: confirmPassword}"></div>    
+        <div data-bind="dxButton: { text: 'Register', onClick: Register_Click }"></div>    
+        <br />
+        <br />
+        result:
+        <div data-bind="dxTextBox: {value: result}"></div>    
+    </div>
+</div>
