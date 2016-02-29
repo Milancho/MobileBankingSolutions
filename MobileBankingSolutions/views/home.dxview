@@ -6,7 +6,7 @@
             type: 'required'
         }, {
             type: 'pattern',
-            pattern: '^[a-zA-Z]+$',
+            pattern: '^[a-zA-Z0-9]+$',
             message: 'Do not use digits.'
         }] }">
             </div>
