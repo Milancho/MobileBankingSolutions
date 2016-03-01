@@ -2,11 +2,12 @@
 
     var url = "http://localhost:8080/token";
     var viewModel = {
-        login: ko.observable(""),
-        password: ko.observable(""),
+        login: ko.observable("aspekt2"),
+        password: ko.observable("Qwerty1$"),
         validateAndSubmit: function (params) {
-            $.post(url, { grant_type: "password", username: this.login(), password: this.password() }).done(function () {
-                //alert("Data: " + data.access_token + "\nStatus: " + status);
+            access_token = "";
+            $.post(url, { grant_type: "password", username: this.login(), password: this.password() }).done(function (data, status) {
+                access_token = data.access_token;  //alert("Data: " +  + "\nStatus: " + status);
                 DevExpress.ui.notify({
                     message: "Successful Login - '" + viewModel.login() + "'",
                     position: {
@@ -15,7 +16,7 @@
                         offset: 15
                     }
                 }, "success", 300);
-                MobileBankingSolutions.app.navigate("MenuView");
+                MobileBankingSolutions.app.navigate("MenuEagerView");
                 }).fail(function () {
                     DevExpress.ui.notify({
                         message: "Invalid Username and/or Password",

@@ -23,6 +23,9 @@
     <Content Include="cordova.js" />
     <Content Include="index.html" />
     <Content Include="index.css" />
+    <Content Include="js\global.js">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="views\LoanView.dxview">
       <SubType>Content</SubType>
     </Content>
