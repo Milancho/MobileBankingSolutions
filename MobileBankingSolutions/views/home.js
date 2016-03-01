@@ -2,8 +2,8 @@
 
     var url = "http://localhost:8080/token";
     var viewModel = {
-        login: ko.observable("aspekt2"),
-        password: ko.observable("Qwerty1$"),
+        login: ko.observable("aspekt"),
+        password: ko.observable("aspekt"),
         validateAndSubmit: function (params) {
             access_token = "";
             $.post(url, { grant_type: "password", username: this.login(), password: this.password() }).done(function (data, status) {

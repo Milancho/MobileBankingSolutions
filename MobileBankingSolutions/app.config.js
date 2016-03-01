@@ -37,22 +37,23 @@ window.MobileBankingSolutions = $.extend(true, window.MobileBankingSolutions, {
         "title": "Calculator",
         "onExecute": "#TipCalculator",
         "icon": "product"
-      },
-      {
-        "title": "books",
-        "onExecute": "#books",
-        "icon": "books"
-      },
-      {
-        "title": "Register",
-        "onExecute": "#Register",
-        "icon": "register"
-      },
-      {
-        "title": "MenuEagerView",
-        "onExecute": "#MenuEagerView",
-        "icon": "menueagerview"
       }
+      //,
+      //{
+      //  "title": "books",
+      //  "onExecute": "#books",
+      //  "icon": "books"
+      //},
+      //{
+      //  "title": "Register",
+      //  "onExecute": "#Register",
+      //  "icon": "register"
+      //},
+      //{
+      //  "title": "MenuEagerView",
+      //  "onExecute": "#MenuEagerView",
+      //  "icon": "menueagerview"
+      //}
     ]
   }
 });
